@@ -1,0 +1,176 @@
+// mixins
+
+@mixin flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+// Fonts
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;700&display=swap");
+@import "landingpage";
+@import "signin";
+@import "login";
+@import "mainpage";
+@import "foodview";
+@import "payments";
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  header {
+    position: relative;
+
+    overflow: hidden;
+    nav {
+      width: 90vw;
+      margin: auto;
+      .logo {
+        margin-right: auto;
+        img {
+          height: 3vh;
+        }
+      }
+      .top-btn {
+        &::before {
+          height: 3vh;
+          width: 17vw;
+        }
+      }
+    }
+  }
+
+  section {
+    height: 80vh;
+  }
+  section {
+    .landing-image {
+      height: 50vh;
+      z-index: -2;
+      margin-top: 10vh;
+    }
+    .landing-desc {
+      z-index: 0;
+      h1 {
+        font-size: 3rem;
+        &::after {
+          height: 0.5vh;
+          left: 50%;
+        }
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .cta-btn {
+    padding: 1vh 8vw;
+  }
+
+  #cards {
+    height: 50vh;
+    .card-wrapper {
+      top: -50%;
+      .card {
+        height: 20vh;
+        width: 30vw;
+        .card-options {
+          opacity: 0;
+          height: 100%;
+          width: 100%;
+          .card-btn,
+          .card-btn-view {
+            font-size: 0.2rem;
+          }
+          h3 {
+            font-size: 0.8rem;
+          }
+        }
+        &:hover .card-options {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .wave {
+    height: 40vh;
+    margin-top: 20vh;
+  }
+  #contact {
+    margin-top: 10vh;
+    height: 80vh;
+    .email h3 {
+      margin-right: 2vh;
+    }
+  }
+  footer {
+    height: 5vh;
+    .social-links img {
+      height: 2vh;
+      margin: 0 3vw;
+    }
+  }
+
+  // signup-page styles
+
+  .form-signup {
+    h1 {
+      &::after {
+        height: 0.4vh;
+      }
+      &::before {
+        height: 0.4vh;
+      }
+    }
+  }
+  .input-field {
+    margin-top: 0;
+  }
+  #footer-signup {
+    margin-top: 0;
+  }
+  #btn-login {
+    padding: 1vh 3vw;
+    bottom: 35%;
+  }
+  .card-wrapper {
+    height: 40vh;
+    .card {
+      width: 40vw;
+      height: 40vh;
+    }
+  }
+  .main-wrapper {
+    margin-top: 10vh;
+  }
+  #mainsection {
+    height: 50vh;
+  }
+  #mexican,
+  #chinese,
+  #indian,
+  #italian {
+    margin-top: 5vh;
+  }
+  .arrow-left,
+  .arrow-right {
+    display: none;
+  }
+  #mainpage {
+    .yellow,
+    .red {
+      height: 70vh;
+    }
+    .red {
+      top: 45vh;
+    }
+    .yellow {
+      top: 165vh;
+    }
+  }
+  #indian {
+    margin-bottom: 5vh;
+  }
+}

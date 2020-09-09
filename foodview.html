@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/Styles.css" />
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
+    <meta charset="UTF-8" />
+    <title>Foodie!</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="animate__animated animate__slideInDown animate__fast">
+      <nav>
+        <div class="logo">
+          <img
+            src="./Assets
+/ham-logo.svg"
+            alt="logo"
+          />
+          <h1>Foodie!</h1>
+        </div>
+        <a href="./login.html"
+          ><button class="cta-btn" id="btn-login">Sign Out</button></a
+        >
+      </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- food view -->
+    <section class="container">
+      <div class="food-view-section">
+        <img src="./Assets/Turmeric.jpg" alt="" class="mainfoodpic" />
+        <h1>Turmeric</h1>
+        <br />
+        <h2>Karnataka</h2>
+        <h2>Rs.500</h2>
+        <h2>200g</h2>
+        <button class="cta-btn" id="cta-order">Order Now</button>
+      </div>
+    </section>
+    <!-- food view end -->
+    <!-- about food section -->
+    <section class="food-recepie container">
+      <h1>About Food</h1>
+    </section>
+    <!-- end of about food section -->
+    <!-- footer -->
+    <footer class="container">
+      <h3>Foodie! 2020-2021</h3>
+      <div class="social-links">
+        <img
+          src="./Assets
+/iconmonstr-twitter-1.svg"
+          alt=""
+        />
+        <img
+          src="./Assets
+/iconmonstr-instagram-11.svg"
+          alt=""
+        />
+        <img
+          src="./Assets
+/iconmonstr-facebook-6.svg"
+          alt=""
+        />
+      </div>
+    </footer>
+    <!-- footer end -->
+    <!-- scripts -->
+    <script src="./example.js"></script>
+    <script>
+      ScrollOut({
+        threshold: 0.5,
+        once: true,
+      });
+    </script>
+    <!-- scripts end -->
+  </body>
+</html>

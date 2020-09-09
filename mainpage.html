@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/Styles.css" />
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
+    <meta charset="UTF-8" />
+    <title>Menu</title>
+  </head>
+  <body id="mainpage">
+    <header class="animate__animated animate__slideInDown animate__fast">
+      <nav>
+        <div class="logo">
+          <img src="./images/ham-logo.svg" alt="logo" />
+          <h1>Foodie!</h1>
+        </div>
+        <a href="./login.html"
+          ><button class="cta-btn" id="btn-login">Sign Out</button></a
+        >
+      </nav>
+    </header>
+    <img src="./images/g1.svg" alt="" class="red">
+    <img src="./images/g2.svg" alt="" class="yellow">
+
+
+  <section class="container main-wrapper" id="mainsection">
+    <span class="arrow-left" id="lmexican"><</span>
+    <span class="arrow-right" id="rmexican">></span>
+    <h1>Mexican Delight</h1>
+    
+    <div class="card-wrapper" id="mexican">
+      <img src="./images/mexican/cauli-rice.jpg" alt="" class="card"></img>
+      <img src="./images/mexican//corn-salad-3.jpg" alt="" class="card"></img>
+      <img src="./images/mexican/enchiliada-sliders.jpg" alt="" class="card"></img>
+      <img src="./images/mexican/hot-chocolate.jpg" alt="" class="card"></img>
+      <img src="./images/mexican/keto-taco cups.jpg" alt="" class="card"></img>
+      <img src="./images/mexican/keto-taquitos.png" alt="" class="card"></img>
+      <img src="./images/mexican/Nachos-supreme.jpg" alt="" class="card"></img>
+      <img src="./images/mexican/Spicy-chicken-taquitos.jpg" alt="" class="card"></img>
+      <img src="./images/mexican/taco-lettuce-wrap.jpg"  alt=""class="card"></img>
+      <img src="./images/mexican/Tacos-al-pastor.jpg"  alt=""class="card"></img>
+    
+    </div>
+
+  </section>
+
+  <section class="container main-wrapper" id="mainsection">
+    <h1>Italian</h1>
+    <span class="arrow-left" id="litalian"><</span>
+    <span class="arrow-right" id="ritalian">></span>
+    <div class="card-wrapper" id="italian">
+      <img src="./images/italian/1486652910-easy-chicken-parmp1.jpg" alt="" class="card">
+      <img src="./images/italian/air-frier-pizza.jpg" alt="" class="card">
+      <img src="./images/italian/calzones.png" alt="" class="card">
+      <img src="./images/italian/chicken-marsala.jpg" alt="" class="card">
+      <img src="./images/italian/chicken-skillet.jpg" alt="" class="card">
+      <img src="./images/italian/Creamy-tuscan-chicken.jpg" alt="" class="card">
+      <img src="./images/italian/flatbread-pizza.jpg" alt="" class="card">
+      <img src="./images/italian/mac-n-cheese.jpg" alt="" class="card">
+      <img src="./images/italian/sauscage-zuchhini.jpg" alt="" class="card">
+      <img src="./images/italian/spaghetti-meatballs.jpg" alt="" class="card">
+    </div>
+  </section>
+
+  <section class="container main-wrapper" id="mainsection">
+    <h1>Chinese</h1>
+    <span class="arrow-left" id="lchinese"><</span>
+    <span class="arrow-right" id="rchinese">></span>
+    <div class="card-wrapper" id="chinese">
+      <img src="./images/chinese/cauliflower-masala.jpg" alt="" class="card">
+      <img src="./images/chinese/gallery-1477940810-dumpling-stir-fry.png" alt="" class="card">
+      <img src="./images/chinese/mongo-shrimp.jpg" alt="" class="card">
+      <img src="./images/chinese/noodle-skillet.jpg" alt="" class="card">
+      <img src="./images/chinese/pad-thai.jpg" alt="" class="card">
+      <img src="./images/chinese/pine-fiy-rice.jpg" alt="" class="card">
+      <img src="./images/chinese/sweetnsour-chicken.jpg" alt="" class="card">
+      <img src="./images/chinese/tteokbokki.jpg" alt="" class="card">
+      <img src="./images/chinese/veg-rice.jpg" alt="" class="card">
+      <img src="./images/chinese/veggie-chow-mein.jpg" alt="" class="card">
+    </div>
+  </section>
+  <section class="container main-wrapper" id="mainsection">
+    <h1>Indian</h1>
+    <span class="arrow-left" id="lindian"><</span>
+    <span class="arrow-right" id="rindian">></span>
+    <div class="card-wrapper" id="indian">
+      <img src="./images/indian/aaloo-gobi.png" alt="" class="card">
+      <img src="./images/indian/butter-chicken.jpg" alt="" class="card">
+      <img src="./images/indian/butter-paneer.jpg" alt="" class="card">
+      <img src="./images/indian/cauliflower-curry.jpg" alt="" class="card">
+      <img src="./images/indian/cauliflower-rice.jpg" alt="" class="card">
+      <img src="./images/indian/chicken-biriyani.jpg" alt="" class="card">
+      <img src="./images/indian/chicken-tikka-masala.jpg" alt="" class="card">
+      <img src="./images/indian/chickpea-flatbred.jpg" alt="" class="card">
+      <img src="./images/indian/naan.jpg" alt="" class="card">
+      <img src="./images/indian/tandoori-chicken.jpg" alt="" class="card">
+    </div>
+  </section>
+
+
+
+
+
+    <footer class="container">
+      <h3>Foodie! 2020-2021</h3>
+      <div class="social-links">
+        <img src="./images/iconmonstr-twitter-1.svg" alt="" />
+        <img src="./images/iconmonstr-instagram-11.svg" alt="" />
+        <img src="./images/iconmonstr-facebook-6.svg" alt="" />
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+    <script>
+      ScrollOut({
+        threshold: 0.5,
+        once: true,
+      });
+    </script>
+  </body>
+</html>

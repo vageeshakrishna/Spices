@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <link rel="stylesheet" href="./Styles/Styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body id="logbody">
+    <header class="animate__animated animate__slideInDown animate__fast">
+      <nav>
+        <div class="logo logo-center">
+          <img src="./Assets/ham-logo.svg" alt="logo" />
+          <h1>Foodie!</h1>
+        </div>
+        <a href="./signup.html"
+          ><button class="cta-btn" id="btn-login">Sign Up</button></a
+        >
+      </nav>
+    </header>
+    <form
+      action="loginServlet"
+      method="post"
+      class="form-signup animate__animated animate__slideInUp animate__slow"
+    >
+      <h1>Log In</h1>
+      <div class="input-field" id="logname">
+        <input
+          type="text"
+          name="username"
+          pattern="[A-Za-z \s]{2,25}"
+          autocomplete="off"
+          required
+        />
+        <label for="name"><span>Name</span></label>
+      </div>
+      <div class="input-field" id="logpassword">
+        <input type="password" name="password" required />
+        <label for="name"><span>Password</span></label>
+      </div>
+      <button class="cta-btn" type="submit" id="btn">Log In</button>
+    </form>
+    <footer class="container">
+      <h3>Foodie! 2020-2021</h3>
+      <div class="social-links">
+        <img src="./Assets/iconmonstr-twitter-1.svg" alt="" />
+        <img src="./Assets/iconmonstr-instagram-11.svg" alt="" />
+        <img src="./Assets/iconmonstr-facebook-6.svg" alt="" />
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+    <script>
+      ScrollOut({
+        threshold: 0.5,
+        once: true,
+      });
+    </script>
+  </body>
+</html>

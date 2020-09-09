@@ -1,0 +1,66 @@
+.card-body {
+  margin-top: 5vh;
+  height: 80vh;
+  .debit-card {
+    color: white;
+    width: 50%;
+    margin: auto;
+    height: 60vh;
+    background-color: orange;
+    border-radius: 3.5rem;
+    position: relative;
+    h1 {
+      position: absolute;
+      right: 50%;
+      transform: translatex(50%);
+      font-size: 2rem;
+      margin-top: 8vh;
+      text-shadow: -0.5rem 0.5rem 1.5rem rgb(121, 111, 111);
+    }
+    input {
+      font-family: "Space Mono", monospace;
+      position: absolute;
+      font-size: 1.5rem;
+      letter-spacing: 0.8rem;
+      background: transparent;
+      border: none;
+      color: white;
+      &:focus {
+        outline: none;
+      }
+    }
+    #cardno {
+      top: 40%;
+      left: 25%;
+      width: 36vw;
+    }
+    #date {
+      top: 60%;
+      left: 30%;
+      width: 10vw;
+    }
+    #cvv {
+      top: 60%;
+      left: 65%;
+      width: 10vw;
+    }
+    #holdername {
+      top: 80%;
+      left: 25%;
+      width: 50vw;
+    }
+  }
+  .chip {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7%;
+    height: 8vh;
+  }
+  #verifycard {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

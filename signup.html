@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./Styles/Styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body class="bck-img">
+    <header class="animate__animated animate__slideInDown animate__fast">
+      <nav>
+        <div class="logo logo-center">
+          <img src="./Assets/ham-logo.svg" alt="logo" />
+          <h1>Foodie!</h1>
+        </div>
+        <a href="./login.html"
+          ><button class="cta-btn" id="btn-login">login</button></a
+        >
+      </nav>
+    </header>
+    <div class="otp-field">
+      <h1>Please Enter <span>OTP</span> to Continue</h1>
+      <span class="close">x</span>
+      <div class="input-field" id="otp">
+        <input
+          type="text"
+          name="otp"
+          pattern="[0-9]{4}"
+          maxlength="4"
+          required
+          autocomplete="off"
+        />
+        <label><span>OTP</span></label>
+      </div>
+      <button class="cta-btn" type="submit">Confirm</button>
+      <button class="cta-btn" type="submit">Resend OTP</button>
+    </div>
+    <form
+      action="./adduser.jsp"
+      method="POST"
+      class="form-signup container animate__animated animate__slideInUp animate__slow"
+    >
+      <h1>Sign Up</h1>
+      <div class="input-field" id="name">
+        <input type="text" name="name" required autocomplete="off" />
+        <label><span>Name</span></label>
+      </div>
+      <div class="input-field" id="phno">
+        <input type="text" name="phno" required autocomplete="off" />
+        <label><span>Phone Number</span></label>
+      </div>
+      <div class="input-field" id="email">
+        <input type="email" name="email" required autocomplete="off" />
+        <label> <span>Email</span></label>
+      </div>
+      <div class="input-field" id="pass">
+        <input type="password" name="password" required autocomplete="off" />
+        <label><span>Password</span></label>
+      </div>
+      <div class="input-field" id="conpass">
+        <input type="text" required />
+        <label><span>Repeat Password</span></label>
+      </div>
+      <a href="#" class="cta-btn" id="getOtp">Get OTP</a>
+      <button class="cta-btn" type="submit" id="btn">Sign-Up</button>
+    </form>
+    <footer class="container" id="footer-signup">
+      <h3>Foodie! 2020-2021</h3>
+      <div class="social-links">
+        <img src="./Assets/iconmonstr-twitter-1.svg" alt="" />
+        <img src="./Assets/iconmonstr-instagram-11.svg" alt="" />
+        <img src="./Assets/iconmonstr-facebook-6.svg" alt="" />
+      </div>
+    </footer>
+    <script src="./otpmodal.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+    <script>
+      ScrollOut({
+        threshold: 0.5,
+        once: true,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/Styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Welcome Foodie!</title>
+  </head>
+  <body onload="preloadImage()">
+    <!-- navbar -->
+    <header class="animate__animated animate__slideInDown animate__fast">
+      <nav>
+        <div class="logo">
+          <img src="./Assets/ham-logo.svg" alt="logo" />
+          <h1>Foodie!</h1>
+        </div>
+        <ul class="nav-link">
+          <a href="#cards"><li class="nav-links">Menu</li></a>
+          <a href="#contact"><li class="nav-links">Contact</li></a>
+          <a href="./signup.html" class="top-btn"
+            ><li class="nav-links">Sign Up</li></a
+          >
+        </ul>
+      </nav>
+    </header>
+    <!-- End of navbar -->
+
+    <!-- landing-section -->
+    <section>
+      <img src="./Assets/Intersect.png" alt="" class="landing-image" />
+      <div
+        class="container landing-desc animate__animated animate__slideInLeft animate__slow"
+      >
+        <h1>Food made better.</h1>
+        <h3>One stop Shop for all your Spice Requirements</h3>
+        <a href="login.html">
+          <button class="cta-btn">Login</button>
+        </a>
+      </div>
+    </section>
+    <!-- end of landing section -->
+
+    <!-- card section -->
+    <section id="cards">
+      <img src="./Assets/wave.svg" alt="" class="wave" />
+      <div class="card-wrapper" data-scroll>
+        <div class="card">
+          <form class="card-options">
+            <h3>item name</h3>
+            <button class="cta-btn card-btn">Add to cart</button
+            ><button class="cta-btn card-btn-view">View Items</button>
+          </form>
+        </div>
+        <div class="card">
+          <div class="card-options">
+            <h3>item name</h3>
+            <button class="cta-btn card-btn">Add to cart</button
+            ><button class="cta-btn card-btn-view">View Items</button>
+          </div>
+        </div>
+        <div class="card">
+          <form class="card-options">
+            <h3>item name</h3>
+            <button class="cta-btn card-btn">Add to cart</button
+            ><button class="cta-btn card-btn-view">View Items</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- end of card section -->
+
+    <!-- contact section -->
+    <section id="contact">
+      <h1 data-scroll>get in touch with us</h1>
+      <div class="email" data-scroll>
+        <h3>Email</h3>
+        <input type="text" />
+      </div>
+      <button class="cta-btn" style="margin-top: -10vh">Contact Us</button>
+    </section>
+    <!-- end of contact section -->
+
+    <!-- footer -->
+    <footer class="container">
+      <h3>Foodie! 2020-2021</h3>
+      <div class="social-links">
+        <img src="./Assets/iconmonstr-twitter-1.svg" alt="" />
+        <img src="./Assets/iconmonstr-instagram-11.svg" alt="" />
+        <img src="./Assets/iconmonstr-facebook-6.svg" alt="" />
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- Scripts -->
+    <script src="./index.js"></script>
+    <script>
+      ScrollOut({
+        threshold: 0.5,
+        once: true,
+      });
+    </script>
+    <script>
+      preloadImage("/Assets/*");
+      function preloadImage(url) {
+        var img = new Image();
+        img.src = url;
+        console.log("done");
+      }
+    </script>
+  </body>
+</html>

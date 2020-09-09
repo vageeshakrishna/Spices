@@ -1,0 +1,196 @@
+.logo-center {
+  margin-right: auto;
+}
+.bck-img {
+  background-image: url("../Assets/pexels-miguel-á-padriñán-971077.jpg");
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  color: white;
+  background-size: cover;
+}
+.form-signup {
+  position: relative;
+  padding: 0 20vw;
+  max-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  align-items: center;
+  justify-items: center;
+  input {
+    color: #fff;
+  }
+  h1 {
+    position: relative;
+    justify-self: center;
+    grid-column: 1/3;
+    grid-row: 0/1;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1vh;
+      width: 100%;
+      background-color: #db5431;
+      bottom: 3%;
+      left: 0;
+      transform: skewy(-2deg);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1vh;
+      width: 100%;
+      background-color: #db5431;
+      top: 0;
+      left: 0;
+      transform: skewy(-2deg);
+    }
+  }
+  #name {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  #phno {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  #email {
+    grid-row: 3/4;
+    grid-column: 1/3;
+  }
+  #pass {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+  #conpass {
+    grid-row: 4/5;
+    grid-column: 2/3;
+  }
+  #getOtp {
+    position: absolute;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    padding: 1vh 1vw;
+    font-size: 0.8rem;
+    top: -40%;
+    right: 5%;
+  }
+}
+.input-field {
+  position: relative;
+  width: 90%;
+  height: 10vh;
+  overflow: hidden;
+  position: relative;
+  margin-top: 5vh;
+  input {
+    height: 10vh;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    padding-top: 6vh;
+    background: transparent;
+
+    &:focus ~ label span,
+    &:valid ~ label span {
+      transform: translateY(-2vh);
+      font-size: 14px;
+      color: #db5431;
+    }
+    &:focus ~ label::after,
+    &:valid ~ label::after {
+      transform: translate(0);
+    }
+  }
+  label {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transition: 0.4s ease-in-out;
+    bottom: 0;
+
+    &::after {
+      transition: 0.8s ease-in-out;
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border-bottom: 3px solid #db5431;
+      left: 0;
+      bottom: 0;
+      transform: translateX(-100%);
+    }
+  }
+  span {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transition: 0.4s ease-in-out;
+    bottom: 1vh;
+  }
+}
+.otp-field {
+  position: absolute;
+  width: 60%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  opacity: 0;
+  height: 80vh;
+  background: #fff;
+  border-radius: 1rem;
+  z-index: 5;
+  color: #db5431;
+  text-align: center;
+  transition: 1s ease;
+  .close {
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-top: 5vh;
+  }
+  span {
+    color: rgb(114, 110, 110);
+  }
+  #otp {
+    input {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    width: 20vw;
+    margin: 20vh auto;
+    font-size: 1.5rem;
+    &:invalid {
+      outline: #db5431;
+    }
+  }
+  button {
+    padding: 1vh 5vh;
+    margin: 0 2vw;
+  }
+}
+.open {
+  transform: translate(-50%, 0%);
+  opacity: 1;
+}
+#btn {
+  grid-row: 5/6;
+  grid-column: 1/3;
+}
+#btn-login {
+  position: absolute;
+  bottom: 20%;
+  right: 5%;
+  padding: 1vh 3vw;
+  font-size: 1rem;
+}
+#footer-signup {
+  margin-top: 21vh;
+}
