@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Baloo Tamma 2", cursive;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+header {
+  height: 100vh;
+  font-weight: bold;
+  width: 15vw;
+  background-color: #cc4e2e;
+  color: white;
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    .logo {
+      margin-top: 5vh;
+      display: flex;
+      flex: 1;
+      justify-content: space-evenly;
+      font-size: 0.8rem;
+      img {
+        height: 3vh;
+      }
+    }
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      flex: 2;
+    }
+  }
+}

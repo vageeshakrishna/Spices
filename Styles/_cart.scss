@@ -1,0 +1,33 @@
+.cart-main-section {
+  h1 {
+    font-size: 2rem;
+  }
+  margin-top: 10vh;
+  .cart-items-wrapper {
+    width: 80vw;
+    @include flex;
+    flex-direction: row;
+  }
+  .cart-item {
+    position: relative;
+    margin-top: 15vh;
+    width: 13vw;
+    height: 40vh;
+    .cart-item-image {
+      height: inherit;
+      align-self: center;
+    }
+    button {
+      font-size: 2rem;
+      color: #db5341;
+      padding: 0 1vw;
+    }
+    .cta {
+      @include flex;
+    }
+  }
+  .cart-item-name {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}

@@ -924,6 +924,140 @@ footer .social-links span {
           transform: translateX(-50%);
 }
 
+.cart-main-section {
+  margin-top: 10vh;
+}
+
+.cart-main-section h1 {
+  font-size: 2rem;
+}
+
+.cart-main-section .cart-items-wrapper {
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.cart-main-section .cart-item {
+  position: relative;
+  margin-top: 15vh;
+  width: 13vw;
+  height: 40vh;
+}
+
+.cart-main-section .cart-item .cart-item-image {
+  height: inherit;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.cart-main-section .cart-item button {
+  font-size: 2rem;
+  color: #db5341;
+  padding: 0 1vw;
+}
+
+.cart-main-section .cart-item .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart-main-section .cart-item-name {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  height: 100vh;
+  font-weight: bold;
+  width: 15vw;
+  background-color: #cc4e2e;
+  color: white;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: inherit;
+}
+
+header nav .logo {
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 0.8rem;
+}
+
+header nav .logo img {
+  height: 3vh;
+}
+
+header nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
 @media screen and (max-width: 768px) {
   html {
     font-size: 50%;
@@ -1047,10 +1181,6 @@ footer .social-links span {
   #indian,
   #italian {
     margin-top: 5vh;
-  }
-  .arrow-left,
-  .arrow-right {
-    display: none;
   }
   #mainpage .yellow,
   #mainpage .red {

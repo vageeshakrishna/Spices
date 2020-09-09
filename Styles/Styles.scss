@@ -14,6 +14,8 @@
 @import "mainpage";
 @import "foodview";
 @import "payments";
+@import "cart";
+@import "adminmain";
 
 @media screen and (max-width: 768px) {
   html {
@@ -154,10 +156,7 @@
   #italian {
     margin-top: 5vh;
   }
-  .arrow-left,
-  .arrow-right {
-    display: none;
-  }
+
   #mainpage {
     .yellow,
     .red {
