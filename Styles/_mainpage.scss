@@ -4,15 +4,61 @@
   overflow-x: auto;
   overflow-y: hidden;
   display: flex;
+  // position: relative;
   scroll-behavior: smooth;
+
   .card {
     height: 60vh;
     width: 20vw;
+    position: relative;
     object-fit: cover;
     margin-right: 3vw;
     transition: all 0.8s ease-in-out;
-    &:hover {
-      transform: scale(1.1);
+    p {
+      position: absolute;
+      top: -115%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      color: white;
+      transition: all 0.8s ease-in-out;
+      font-size: 1.5rem;
+    }
+    #addtocart {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -100%;
+      transition: all 0.8s ease-in-out;
+      padding: 1vh;
+    }
+    #viewitem {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -100%;
+      transition: all 0.8s ease-in-out;
+      padding: 1vh;
+    }
+
+    img {
+      height: inherit;
+      width: inherit;
+      transition: all 0.8s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+        filter: blur(2px);
+      }
+    }
+    &:hover p {
+      top: 15%;
+    }
+    &:hover #addtocart {
+      top: 40%;
+    }
+    &:hover #viewitem {
+      top: 25%;
     }
   }
   &::-webkit-scrollbar {
@@ -50,4 +96,11 @@
   .yellow {
     top: 60vh;
   }
+}
+#btn-cart {
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+  padding: 1vh 3vw;
+  font-size: 1rem;
 }

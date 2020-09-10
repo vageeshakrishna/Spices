@@ -245,7 +245,7 @@ section .landing-desc h3 {
   left: 0;
   -webkit-transition: 1s all ease;
   transition: 1s all ease;
-  z-index: 1;
+  z-index: 5;
 }
 
 #cards .card-wrapper .card .card-options h3 {
@@ -737,6 +737,7 @@ footer .social-links span {
 .card-wrapper .card {
   height: 60vh;
   width: 20vw;
+  position: relative;
   -o-object-fit: cover;
      object-fit: cover;
   margin-right: 3vw;
@@ -744,9 +745,65 @@ footer .social-links span {
   transition: all 0.8s ease-in-out;
 }
 
-.card-wrapper .card:hover {
+.card-wrapper .card p {
+  position: absolute;
+  top: -115%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 3;
+  color: white;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.card-wrapper .card #addtocart {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -100%;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  padding: 1vh;
+}
+
+.card-wrapper .card #viewitem {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -100%;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  padding: 1vh;
+}
+
+.card-wrapper .card img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.card-wrapper .card img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.card-wrapper .card:hover p {
+  top: 15%;
+}
+
+.card-wrapper .card:hover #addtocart {
+  top: 40%;
+}
+
+.card-wrapper .card:hover #viewitem {
+  top: 25%;
 }
 
 .card-wrapper::-webkit-scrollbar {
@@ -793,6 +850,14 @@ footer .social-links span {
 
 #mainpage .yellow {
   top: 60vh;
+}
+
+#btn-cart {
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+  padding: 1vh 3vw;
+  font-size: 1rem;
 }
 
 .mainfoodpic {
@@ -1328,6 +1393,22 @@ main nav .nav-links {
   }
   #indian {
     margin-bottom: 5vh;
+  }
+  .card-body {
+    margin-top: 20vh;
+  }
+  .card-body .debit-card {
+    width: 90%;
+    height: 35vh;
+  }
+  .card-body .debit-card input {
+    font-size: 0.6rem;
+  }
+  .card-body .debit-card #cardno {
+    width: 46vw;
+  }
+  .card-body .chip {
+    height: 3vh;
   }
 }
 /*# sourceMappingURL=Styles.css.map */

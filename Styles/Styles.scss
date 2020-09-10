@@ -172,4 +172,20 @@
   #indian {
     margin-bottom: 5vh;
   }
+  .card-body {
+    margin-top: 20vh;
+    .debit-card {
+      width: 90%;
+      height: 35vh;
+      input {
+        font-size: 0.6rem;
+      }
+      #cardno {
+        width: 46vw;
+      }
+    }
+    .chip {
+      height: 3vh;
+    }
+  }
 }
