@@ -14,59 +14,21 @@ li {
   list-style-type: none;
 }
 main {
+  float: left;
+  position: fixed;
   height: 100vh;
-  width: 100vw;
+  width: 20vw;
   font-weight: bold;
   color: rgb(172, 172, 172);
   display: grid;
   grid-template-columns: 15vw 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  .card1,
-  .card2,
-  .card3 {
-    position: relative;
-    text-align: center;
-    transition: all 0.5s cubic-bezier(0.06, 0.76, 0.54, 0.35);
-    h1 {
-      margin-top: 5vh;
-      z-index: 2;
-    }
-    img {
-      height: 10vh;
-      margin-top: 10vh;
-    }
-    &::after {
-      transition: all 0.5s cubic-bezier(0.06, 0.76, 0.54, 0.35);
-      content: "";
-      display: block;
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      left: 0;
-      background-image: linear-gradient(#504f4f, #353535);
-      clip-path: circle(50px at -100% 100%);
-      z-index: -1;
-    }
+  li {
+    padding: 1vh 3vw;
+    transition: all 0.4s ease-in-out;
     &:hover {
-      color: white;
-      transform: translate(-0.5%, -0.5%);
+      background-color: #504f4f;
     }
-    &:hover::after {
-      clip-path: circle(1000px);
-    }
-  }
-  .card1 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .card2 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
-  .card3 {
-    grid-column: 2/4;
-    grid-row: 2/3;
   }
   nav {
     width: 100vw;
@@ -95,6 +57,61 @@ main {
       align-items: center;
       flex: 2;
       font-size: 1.1rem;
+    }
+  }
+}
+.card1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.card2 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.card3 {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+.card-wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 30vh 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  .card1,
+  .card2,
+  .card3 {
+    position: relative;
+    text-align: center;
+    margin: 4vh;
+    transition: all 0.5s cubic-bezier(0.06, 0.76, 0.54, 0.35);
+    border: 2px solid #504f4f;
+    h1 {
+      padding-top: 5vh;
+      z-index: 2;
+    }
+    img {
+      height: 10vh;
+      margin-top: 10vh;
+    }
+    &::after {
+      transition: all 0.5s cubic-bezier(0.06, 0.76, 0.54, 0.35);
+      content: "";
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(#504f4f, #353535);
+      clip-path: circle(50px at -100% 100%);
+      z-index: -1;
+    }
+    &:hover {
+      color: white;
+    }
+    &:hover::after {
+      clip-path: circle(1000px);
     }
   }
 }
