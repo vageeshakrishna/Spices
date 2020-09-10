@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order-list</title>
+    <link rel="stylesheet" href="./Styles/admin.css" />
+  </head>
+  <body>
+    <main
+      class="animate__animated animate__slideInDown animate__fast horizontal"
+    >
+      <nav>
+        <div class="logo">
+          <a href="./adminmain.html"><h1>Grab It spices!</h1></a>
+        </div>
+        <ul class="nav-links">
+          <a href="./Userlist.html"><li>User List</li></a>
+          <a href="./orderlist.html"><li>Order List</li></a>
+          <a href="./productmanage.html" class="active">
+            <li>Manage Product</li></a
+          >
+          <a href="login.html"><li>Log Out</li></a>
+        </ul>
+      </nav>
+    </main>
+    <section class="productmanage">
+      <form
+        action="./adduser.jsp"
+        method="POST"
+        class="form-signup container animate__animated animate__slideInUp animate__slow"
+      >
+        <h1>Add Product</h1>
+        <div class="input-field" id="name">
+          <input type="text" name="name" required autocomplete="off" />
+          <label><span>Product Name</span></label>
+        </div>
+        <div class="input-field" id="phno">
+          <input type="text" name="phno" required autocomplete="off" />
+          <label><span>Quantity</span></label>
+        </div>
+        <div class="input-field" id="phno">
+          <input type="text" name="phno" required autocomplete="off" />
+          <label><span>Description</span></label>
+        </div>
+
+        <a href="#" class="cta-btn" id="getOtp">Get OTP</a>
+        <button class="cta-btn" type="submit" id="btn">Sign-Up</button>
+      </form>
+    </section>
+  </body>
+</html>

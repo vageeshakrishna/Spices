@@ -195,13 +195,13 @@ main nav .nav-links {
   background-color: #504f4f;
 }
 
-.order-list {
+section {
   height: 100vh;
   width: 85vw;
   margin-left: 15vw;
 }
 
-.order-list h1 {
+section h1 {
   font-size: 2rem;
   text-align: center;
   padding-top: 10vh;
@@ -227,5 +227,84 @@ main nav .nav-links {
 .pure td {
   padding: 2vh 0;
   font-size: 1.2rem;
+}
+
+tbody button {
+  margin: 0 1vw;
+}
+
+tbody button img {
+  height: 3vh;
+}
+
+form {
+  width: 60%;
+  margin: auto;
+}
+
+.input-field {
+  position: relative;
+  width: 90%;
+  height: 10vh;
+  overflow: hidden;
+  position: relative;
+  margin-top: 5vh;
+}
+
+.input-field input {
+  height: 10vh;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  padding-top: 6vh;
+  background: transparent;
+}
+
+.input-field input:focus ~ label span,
+.input-field input:valid ~ label span {
+  -webkit-transform: translateY(-2vh);
+          transform: translateY(-2vh);
+  font-size: 14px;
+  color: #db5431;
+}
+
+.input-field input:focus ~ label::after,
+.input-field input:valid ~ label::after {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+.input-field label {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  bottom: 0;
+}
+
+.input-field label::after {
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #db5431;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.input-field span {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  bottom: 1vh;
 }
 /*# sourceMappingURL=admin.css.map */
