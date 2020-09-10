@@ -1,7 +1,8 @@
 const plus = document.querySelector(".add");
 const less = document.querySelector(".less");
 const itemvalue = document.querySelector(".cart-item-value");
-
+const itemprice = document.querySelector(".price");
+const value = parseInt(itemprice);
 var itemcount = parseInt(itemvalue.innerHTML);
 plus.addEventListener("click", () => {
   itemcount++;

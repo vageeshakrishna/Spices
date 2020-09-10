@@ -10,7 +10,7 @@
   }
   .cart-item {
     position: relative;
-    margin-top: 15vh;
+    margin-top: 10vh;
     width: 13vw;
     height: 40vh;
     .cart-item-image {
@@ -30,4 +30,10 @@
     font-size: 1.2rem;
     text-align: center;
   }
+}
+.checkout-btn {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 10%;
 }
