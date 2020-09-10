@@ -732,7 +732,7 @@ footer .social-links span {
 
 .card-wrapper .card {
   height: 60vh;
-  width: 20vw;
+  width: 25vw;
   -o-object-fit: cover;
      object-fit: cover;
   margin-right: 3vw;
