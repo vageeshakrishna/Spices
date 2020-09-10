@@ -65,3 +65,42 @@ form {
     bottom: 1vh;
   }
 }
+.cta-btn {
+  position: relative;
+  margin-top: 15vh;
+  padding: 2vh 6vw;
+  background-color: #db5341;
+  border: 3px solid #db5341;
+  border-radius: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  font-family: "Baloo Tamma 2", cursive;
+  z-index: 1;
+  &::after {
+    content: "";
+    transition: 0.4s all ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: white;
+    height: 100%;
+    width: 0%;
+    transform: translateX(-20%);
+    border-radius: 0.6rem;
+  }
+  &:hover::after {
+    z-index: -1;
+    width: 100%;
+    transform: translateX(0%);
+  }
+  &:hover {
+    color: #db5341;
+  }
+  &:focus {
+    outline: none;
+  }
+  align-self: center;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1121,7 +1121,7 @@ main nav .nav-links {
   grid-row: 2/3;
 }
 
-.card-wrapper {
+.cards-wrapper {
   height: 100vh;
   display: -ms-grid;
   display: grid;
@@ -1131,9 +1131,9 @@ main nav .nav-links {
       grid-template-rows: 1fr 1fr;
 }
 
-.card-wrapper .card1,
-.card-wrapper .card2,
-.card-wrapper .card3 {
+.cards-wrapper .card1,
+.cards-wrapper .card2,
+.cards-wrapper .card3 {
   position: relative;
   text-align: center;
   margin: 4vh;
@@ -1142,23 +1142,23 @@ main nav .nav-links {
   border: 2px solid #504f4f;
 }
 
-.card-wrapper .card1 h1,
-.card-wrapper .card2 h1,
-.card-wrapper .card3 h1 {
+.cards-wrapper .card1 h1,
+.cards-wrapper .card2 h1,
+.cards-wrapper .card3 h1 {
   padding-top: 5vh;
   z-index: 2;
 }
 
-.card-wrapper .card1 img,
-.card-wrapper .card2 img,
-.card-wrapper .card3 img {
+.cards-wrapper .card1 img,
+.cards-wrapper .card2 img,
+.cards-wrapper .card3 img {
   height: 10vh;
   margin-top: 10vh;
 }
 
-.card-wrapper .card1::after,
-.card-wrapper .card2::after,
-.card-wrapper .card3::after {
+.cards-wrapper .card1::after,
+.cards-wrapper .card2::after,
+.cards-wrapper .card3::after {
   -webkit-transition: all 0.5s cubic-bezier(0.06, 0.76, 0.54, 0.35);
   transition: all 0.5s cubic-bezier(0.06, 0.76, 0.54, 0.35);
   content: "";
@@ -1175,15 +1175,15 @@ main nav .nav-links {
   z-index: -1;
 }
 
-.card-wrapper .card1:hover,
-.card-wrapper .card2:hover,
-.card-wrapper .card3:hover {
+.cards-wrapper .card1:hover,
+.cards-wrapper .card2:hover,
+.cards-wrapper .card3:hover {
   color: white;
 }
 
-.card-wrapper .card1:hover::after,
-.card-wrapper .card2:hover::after,
-.card-wrapper .card3:hover::after {
+.cards-wrapper .card1:hover::after,
+.cards-wrapper .card2:hover::after,
+.cards-wrapper .card3:hover::after {
   -webkit-clip-path: circle(1000px);
           clip-path: circle(1000px);
 }

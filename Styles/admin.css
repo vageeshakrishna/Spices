@@ -124,7 +124,7 @@ main nav .nav-links {
   grid-row: 2/3;
 }
 
-.card-wrapper {
+.cards-wrapper {
   height: 100vh;
   display: -ms-grid;
   display: grid;
@@ -134,9 +134,9 @@ main nav .nav-links {
       grid-template-rows: 1fr 1fr;
 }
 
-.card-wrapper .card1,
-.card-wrapper .card2,
-.card-wrapper .card3 {
+.cards-wrapper .card1,
+.cards-wrapper .card2,
+.cards-wrapper .card3 {
   position: relative;
   text-align: center;
   margin: 4vh;
@@ -145,23 +145,23 @@ main nav .nav-links {
   border: 2px solid #504f4f;
 }
 
-.card-wrapper .card1 h1,
-.card-wrapper .card2 h1,
-.card-wrapper .card3 h1 {
+.cards-wrapper .card1 h1,
+.cards-wrapper .card2 h1,
+.cards-wrapper .card3 h1 {
   padding-top: 5vh;
   z-index: 2;
 }
 
-.card-wrapper .card1 img,
-.card-wrapper .card2 img,
-.card-wrapper .card3 img {
+.cards-wrapper .card1 img,
+.cards-wrapper .card2 img,
+.cards-wrapper .card3 img {
   height: 10vh;
   margin-top: 10vh;
 }
 
-.card-wrapper .card1::after,
-.card-wrapper .card2::after,
-.card-wrapper .card3::after {
+.cards-wrapper .card1::after,
+.cards-wrapper .card2::after,
+.cards-wrapper .card3::after {
   -webkit-transition: all 0.5s cubic-bezier(0.06, 0.76, 0.54, 0.35);
   transition: all 0.5s cubic-bezier(0.06, 0.76, 0.54, 0.35);
   content: "";
@@ -178,15 +178,15 @@ main nav .nav-links {
   z-index: -1;
 }
 
-.card-wrapper .card1:hover,
-.card-wrapper .card2:hover,
-.card-wrapper .card3:hover {
+.cards-wrapper .card1:hover,
+.cards-wrapper .card2:hover,
+.cards-wrapper .card3:hover {
   color: white;
 }
 
-.card-wrapper .card1:hover::after,
-.card-wrapper .card2:hover::after,
-.card-wrapper .card3:hover::after {
+.cards-wrapper .card1:hover::after,
+.cards-wrapper .card2:hover::after,
+.cards-wrapper .card3:hover::after {
   -webkit-clip-path: circle(1000px);
           clip-path: circle(1000px);
 }
@@ -306,5 +306,55 @@ form {
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   bottom: 1vh;
+}
+
+.cta-btn {
+  position: relative;
+  margin-top: 15vh;
+  padding: 2vh 6vw;
+  background-color: #db5341;
+  border: 3px solid #db5341;
+  border-radius: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  font-family: "Baloo Tamma 2", cursive;
+  z-index: 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.cta-btn::after {
+  content: "";
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: white;
+  height: 100%;
+  width: 0%;
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+  border-radius: 0.6rem;
+}
+
+.cta-btn:hover::after {
+  z-index: -1;
+  width: 100%;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.cta-btn:hover {
+  color: #db5341;
+}
+
+.cta-btn:focus {
+  outline: none;
 }
 /*# sourceMappingURL=admin.css.map */
