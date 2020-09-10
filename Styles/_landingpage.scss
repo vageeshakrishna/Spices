@@ -32,10 +32,11 @@ header {
       @include flex();
       margin-right: auto;
       img {
-        height: 5vh;
+        height: 4vh;
       }
-      h1 {
-        margin: 1vh 0 0 1vw;
+      .logoname {
+        height: 3vh;
+        margin-left: 1vw;
       }
     }
     .nav-link {
@@ -156,11 +157,13 @@ section {
     .card {
       position: relative;
       height: 100%;
-      width: 20vw;
+      width: 25vw;
       z-index: 1;
-      background-image: url("https://images.pexels.com/photos/670702/pexels-photo-670702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-      background-size: cover;
       transition: 1s all ease;
+      overflow: hidden;
+      img {
+        height: inherit;
+      }
       .card-options {
         display: block;
         position: absolute;
@@ -210,8 +213,8 @@ section {
   margin-top: 30vh;
   color: white;
   background-image: radial-gradient(rgb(128, 117, 117), rgb(66, 65, 65)),
-    url(../Assets/6d7806731a1d2cfff7b37598338f5502.png);
-  background-size: contain;
+    url(../Assets/pexels-skitterphoto-877220.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-blend-mode: multiply;
